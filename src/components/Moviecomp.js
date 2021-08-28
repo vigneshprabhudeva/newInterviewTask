@@ -3,11 +3,11 @@ import axios from 'axios'
 import { useState,useEffect } from 'react';
 import '../css/Moviecomp.css'
 import { useHistory } from "react-router-dom";
-import { useStore,useDispatch,useSelector } from 'react-redux';
+import {useDispatch} from 'react-redux';
 
 export default function Moviecomp(movie) {
     const dispatch=useDispatch()
-    const store=useStore()
+    
     let history = useHistory();
     let [data,setdata]=useState([""])
     let [genre,setgenre]=useState([""])
@@ -113,7 +113,7 @@ export default function Moviecomp(movie) {
         console.log("hiiiii")
      
         dispatch({type:"save",movieInfo:params})
-        console.log(store.getState().movieInfo)
+        
         history.push("/info");
         
     }

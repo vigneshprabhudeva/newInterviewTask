@@ -1,12 +1,12 @@
 let initialState={movieInfo:[]}
 function FormReducer(state =initialState,action){
     console.log(action)
-    console.log(initialState)
+    console.log(initialState.movieInfo)
 
     switch(action.type){
         case 'save':
           console.log("save")
-        return{...state,movieInfo:action.task}
+        return{...state,movieInfo:action.movieInfo}
         
 
       
