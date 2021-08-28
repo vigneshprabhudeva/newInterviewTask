@@ -1,0 +1,41 @@
+.genre{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    padding: 5px;
+    margin: 5px;
+    
+    flex-wrap:wrap;
+    overflow: hidden;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    
+    margin-bottom: 2vh;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: black;
+    
+    
+}
+.card:hover{
+    background-color: #1c2237;;
+    padding: 20px;
+    color: white;
+}
+img{
+    border-radius: 10px;
+}
+.subtitles{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.rating{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
